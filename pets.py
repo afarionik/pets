@@ -19,3 +19,14 @@ class Dog(Pet):
 
     def chases_cats(self):
         return self.chases_cats
+
+class Cat(Pet):
+    def __init__ (self, name, hates_dogs):
+        Pet.__init__(self, name, 'Cat')
+        self.hates_dogs = hates_dogs
+
+    def is_hates_dogs(self):
+        return self.hates_dogs
+
+    def say_something(self):
+        print "Meow Meow !!!"
